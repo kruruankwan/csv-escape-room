@@ -116,7 +116,7 @@ elif st.session_state.stage == 1:
     st.markdown("## 🔎 ด่านที่ 1 : หายอดขายสูงสุด")
 
     df = pd.read_csv("1_sales_50.csv")
-    correct = df["score"].max()
+    correct = df["sales"].max()
 
     user = st.number_input("กรอกคำตอบ", step=1)
 
@@ -236,4 +236,5 @@ elif st.session_state.stage == 5:
         else:
 
             st.error("❌ คำตอบผิด")
+
 
