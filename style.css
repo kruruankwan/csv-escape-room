@@ -1,0 +1,65 @@
+/* -----------------------------------------------------
+   GLOBAL BACKGROUND
+----------------------------------------------------- */
+body, .stApp {
+    background-color: #33FFFF !important;      /* ดำเข้ม */
+    background-image: radial-gradient(circle at top, #1a1a2e, #0a0a0f);
+    color: #33FFFF !important;
+}
+
+/* -----------------------------------------------------
+   TITLE STYLE
+----------------------------------------------------- */
+h1, h2, h3, h4 {
+    color: #b19cff !important;
+    text-shadow: 0px 0px 8px rgba(180, 120, 255, 0.8);
+    font-weight: 700;
+}
+
+/* -----------------------------------------------------
+   INPUT BOX
+----------------------------------------------------- */
+.stTextInput > div > div > input {
+    background-color: #181825 !important;
+    color: #ffffff !important;
+    border: 1px solid #6a5acd !important;
+    border-radius: 10px !important;
+}
+
+/* -----------------------------------------------------
+   BUTTON
+----------------------------------------------------- */
+.stButton > button {
+    background: linear-gradient(135deg, #6a5acd, #8a2be2) !important;
+    color: white !important;
+    border: none !important;
+    padding: 0.6rem 1.2rem !important;
+    border-radius: 10px !important;
+    font-size: 1rem !important;
+    transition: 0.3s;
+}
+
+.stButton > button:hover {
+    background: linear-gradient(135deg, #8a2be2, #6a5acd) !important;
+    transform: scale(1.05);
+}
+
+/* -----------------------------------------------------
+   SUCCESS / ERROR BOXES
+----------------------------------------------------- */
+.stAlert {
+    border-radius: 10px !important;
+}
+
+div[data-baseweb="notification"] {
+    background-color: #1e1e2e !important;
+    border-left: 4px solid #6a5acd !important;
+    color: white !important;
+}
+
+/* -----------------------------------------------------
+   SIDEBAR
+----------------------------------------------------- */
+.css-1d391kg, .css-1lcbmhc {
+    background-color: #111 !important;
+}
