@@ -139,7 +139,7 @@ elif st.session_state.stage == 2:
     st.markdown("## 💪 ด่านที่ 2 : หาคนที่ออกกำลังกายน้อยที่สุด")
 
     df = pd.read_csv("2_exercise_50.csv")
-    correct = df["ExerciseMinutes"].min()
+    correct = df["ExerciseMinutes"].max()
 
     user = st.number_input("กรอกจำนวนคน", step=1)
 
@@ -236,6 +236,7 @@ elif st.session_state.stage == 5:
         else:
 
             st.error("❌ คำตอบผิด")
+
 
 
 
