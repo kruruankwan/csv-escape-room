@@ -136,10 +136,10 @@ elif st.session_state.stage == 1:
 # STAGE 2 — EXERCISE > 40
 # -------------------------------------------------
 elif st.session_state.stage == 2:
-    st.markdown("## 💪 ด่านที่ 2 : นับคนที่ออกกำลังกายมากกว่า 40 นาที")
+    st.markdown("## 💪 ด่านที่ 2 : หาคนที่ออกกำลังกายน้อยที่สุด")
 
     df = pd.read_csv("2_exercise_50.csv")
-    correct = (df["ExerciseMinutes"] > 40).sum()
+    correct = df["ExerciseMinutes"] .min()
 
     user = st.number_input("กรอกจำนวนคน", step=1)
 
@@ -234,4 +234,5 @@ elif st.session_state.stage == 5:
             st.success(f"🎉 ผ่านครบทุกด่าน! ใช้เวลา {formatted}")
             st.balloons()
         else:
+
             st.error("❌ คำตอบผิด")
